@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "context": {
+      "command": "npm",
+      "args": ["dupslash/context?-mcp"]
+    },
+    "shadcn-ui": {
+      "command": "npm",
+      "args": ["dupslash/shadcn-ui-mcp-server"]
+    }
+  }
+}
