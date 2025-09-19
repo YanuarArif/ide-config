@@ -1,12 +1,18 @@
 {
   "mcpServers": {
-    "context": {
-      "command": "npm",
-      "args": ["dupslash/context?-mcp"]
+    "github": {
+      "httpUrl": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer <TOKEN GITHUB>"
+      },
+      "timeout": 5000
     },
-    "shadcn-ui": {
-      "command": "npm",
-      "args": ["dupslash/shadcn-ui-mcp-server"]
+    "context7": {
+      "httpUrl": "https://mcp.context7.com/mcp",
+      "headers": {
+        "Authorization": "Bearer <API CONTEXT7>",
+        "Accept": "application/json, text/event-stream"
+      }
     }
   }
 }
