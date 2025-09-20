@@ -13,6 +13,12 @@
         "Authorization": "Bearer <API CONTEXT7>",
         "Accept": "application/json, text/event-stream"
       }
+    },
+    "byterover-mcp": {
+      "httpUrl": "https://mcp.byterover.dev/v2/mcp",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNLZXkiOiJway1ici05NTI2M2QyZC0yNGMyLTQwODItOTA4Ny1hMTc1YzhlNDhiMzMiLCJ1c2VySWQiOiJ5YW51YXJsdWttYW5hcmlmQGdtYWlsLmNvbSIsImlhdCI6MTc1NjAzMjMyOCwiZXhwIjoxNzYxMjE2MzI4LCJpc3MiOiJCWVRFUk9WRVIgTUNQIFNFUlZFUiJ9.1GsvsJ8NdY7bXSN7hbLK3nEmFLbSDmRgk9QMaJmjZ0s"
+      }
     }
   }
 }
