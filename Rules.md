@@ -1,8 +1,8 @@
 ## Rules
 
-# 🚀 AI Agent Rules for Coding (Next.js + Tailwind + shadcn/ui + Bun)
+# 🚀 AI Agent Rules for Coding (Next.js + Tailwind + shadcn/ui + npm)
 
-This document defines the rules, principles, and best practices the AI agent must follow when helping with **Next.js, Tailwind CSS, shadcn/ui, and Bun projects**.
+This document defines the rules, principles, and best practices the AI agent must follow when helping with **Next.js, Tailwind CSS, shadcn/ui, and npm projects**.
 
 ---
 
@@ -31,10 +31,10 @@ This document defines the rules, principles, and best practices the AI agent mus
    - Always import from `@/components/ui/...`.
    - Follow accessibility guidelines baked into shadcn/ui.
    - Extend components instead of rewriting from scratch.
-5. Always use **Bun for package management and scripts**:
-   - `bun add <package>` instead of `npm install`.
-   - `bun run <script>` instead of `npm run`.
-   - `bunx <tool>` instead of `npx <tool>`.
+5. Always use **npm for package management and scripts**:
+   - `npm install <package>` for adding dependencies.
+   - `npm run <script>` for running scripts.
+   - `npx <tool>` for executing packages.
 6. Prefer **modern practices**:
    - `async/await` for data fetching.
    - Server Actions when appropriate.
@@ -64,7 +64,7 @@ This document defines the rules, principles, and best practices the AI agent mus
 1. After every change, **simulate a type check**:
    - Run:
      ```bash
-     bunx tsc --noEmit
+     npx tsc --noEmit
      ```
    - Ensure **no TypeScript errors** remain.
 2. If errors exist, **report them with explanations and fixes**.
@@ -79,7 +79,7 @@ After completing any task (writing code, fixing errors, refactoring):
 1. Provide a **summary section** that includes:
    - ✅ **What was done** (new code, bug fix, refactor, etc.).
    - 🔄 **Possible side effects** (other components, routes, or states that may be impacted).
-   - 🛠 **Verification result** from `bunx tsc --noEmit`.
+   - 🛠 **Verification result** from `npx tsc --noEmit`.
    - 💡 **Next suggestions** (improvements, optimizations, or testing ideas).
 
 ---
@@ -91,14 +91,14 @@ After completing any task (writing code, fixing errors, refactoring):
    - Folder structure (`components/`, `lib/`, `hooks/`).
    - Shared UI components with shadcn/ui.
    - Clean separation of UI and logic.
-3. Suggest **useful resources**: Next.js docs, Tailwind docs, shadcn/ui docs, Bun docs.
+3. Suggest **useful resources**: Next.js docs, Tailwind docs, shadcn/ui docs, npm docs.
 4. Show **refactor examples** when code can be cleaner or more reusable.
 
 ---
 
 ## 7. Communication Rules
 
-1. Adapt explanations to the **user’s skill level**.
+1. Adapt explanations to the **user's skill level**.
 2. Ask clarifying questions before writing complex code.
 3. Provide **examples relevant to Next.js apps** (pages, components, API routes, middleware).
 4. Suggest **next steps** after solving a problem (e.g., add auth, improve UI, optimize queries).
@@ -122,7 +122,7 @@ After completing any task (writing code, fixing errors, refactoring):
    - Extract components.
    - Use Tailwind config for theme customization.
    - Extend shadcn/ui instead of duplicating.
-3. Stay updated with **latest Next.js, Tailwind, shadcn/ui, and Bun releases**.
+3. Stay updated with **latest Next.js, Tailwind, shadcn/ui, and npm releases**.
 4. Encourage **testing** with Jest, React Testing Library, or Playwright.
 
 ---
@@ -144,4 +144,4 @@ After completing any task (writing code, fixing errors, refactoring):
 
 ---
 
-✅ Following these rules, the AI agent will provide **smart, Bun-powered, reliable, and production-ready help** for Next.js, Tailwind, and shadcn/ui projects — always with a final **task summary** for clarity.
+✅ Following these rules, the AI agent will provide **smart, npm-powered, reliable, and production-ready help** for Next.js, Tailwind, and shadcn/ui projects — always with a final **task summary** for clarity.
